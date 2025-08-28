@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Inter", sans-serif ;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    background-color: black;
+}
+#hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#left-sec{
+    height: 100vh;
+    width: 60%;
+    background-color: rgb(30, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left-sec-content{
+  height: 50vh;
+  width: 53%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;  
+}
+#create-acc-para{
+    width: 70%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+#create-acc-para h2{
+    font-size: 2.4vw;
+    color: #e1bee7;
+}
+#create-acc-para-hr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+#create-acc-para-hr hr{
+    width: 25%;
+    color: black;
+}
+#create-acc-para-hr p{
+    color: #fff;
+    font-size: 1rem;
+}
+#create-acc{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#name-email{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#name-email input{
+width: 100%;
+height: 25%;
+}
+#password{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#password input{
+    width: 45%;
+    height: 100%;
+}
+#checkbox{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#checkbox-content {
+    color: #fff;
+    width: 50%;
+    height: 100%;
+}
+
+#checkbox button{
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #d85811;
+    background-color: #d85118;
+    padding: 1vh 0.8vw;
+    font-size: 1;
+}
+#create-acc-btn{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#create-acc-btn button{
+    width: 33%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#create-acc-btn button i{
+    font-size: 1.4rem;
+}
+#right-sec{
+    width: 30%;
+    height: 100vh;
+}
+#right-sec-content{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 5vw;
+}
+#right-sec-content h2{
+font-size: 2.35vw;
+color: #e1bee7;
+}
+#footer {
+  width: 100%;
+  height: 18vh;
+  background-color: #d85811;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer-cpy{
+  font-size: 1.3rem;
+  color: #fff;
+}
+#footer-home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+}
+#footer-home a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+
+}
+#footer-icon{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+}
+#footer-icon i{
+  font-size: 1.8rem;
+  background-color: white;
+  border-radius: 3px;
+}
