@@ -58,7 +58,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 #sign-in {
-  width: 14%;
+  width: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -264,7 +264,7 @@ body {
   justify-content: center;
 }
 .mainSlide2Background {
-  background-image: url(../images/Feature_Section.png);
+  background-image: url("../image/Feature_Section.png");
   background-size: cover;
   background-position: center;
   mask-image: linear-gradient(
@@ -293,7 +293,7 @@ body {
   height: 70vh;
   border: 2px solid #d85811;
   border-radius: 12px;
-  background-image: url(../images/Screenshot\ 2025-07-22\ 012336.png);
+  background-image: url("../image/Screenshot\ 2025-07-22\ 012336.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -360,6 +360,7 @@ width: 45%;
 }
 .btn1 i {
   font-weight: bolder;
+  margin-left: 0.5vw;
 }
 .btn2 {
   background-color: transparent;
@@ -370,6 +371,10 @@ width: 45%;
   border-radius: 4px;
   border: 1px solid #d85811;
   cursor: pointer;
+}
+.btn2 i {
+  font-weight: bolder;
+  margin-left: 0.5vw;
 }
 .rightCatalog1 {
   margin-top: 2.5vw;
@@ -446,14 +451,37 @@ width: 45%;
   justify-content: space-between;
   align-items: center;
 }
-.team-member-img {
+#team-member-img1 {
   height: 30vh;
   width: 80%;
   border-radius: 50%;
   border: 1px solid #181818;
-  background-image: url("../image/mine.jpg");
+  background-image: url("../image/Mihir_recent.png");
   background-size: cover;
 }
+#team-member-img2 {
+  height: 30vh;
+  width: 80%;
+  border-radius: 50%;
+  border: 1px solid #181818;
+  background-size: cover;
+}
+#team-member-img3 {
+  height: 30vh;
+  width: 80%;
+  border-radius: 50%;
+  background-image: url("../image/mine.jpg");
+  border: 1px solid #181818;
+  background-size: cover;
+}
+#team-member-img4 {
+  height: 30vh;
+  width: 80%;
+  border-radius: 50%;
+  border: 1px solid #181818;
+  background-size: cover;
+}
+
 .team-member-name h3 {
   color: #fff;
 }
@@ -545,6 +573,7 @@ width: 45%;
   justify-content: space-around;
 }
 #plan-content-para {
+  display: inline;
   height: 10%;
   width: 100%;
 }
