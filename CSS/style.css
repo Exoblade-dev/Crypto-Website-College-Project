@@ -3,18 +3,18 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Inter Thin;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
 }
 html,
 body {
   height: 100%;
   width: 100%;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
 }
 #main {
   width: 100%;
   background-color: black;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
 }
 #nav {
   height: 100px;
@@ -26,12 +26,24 @@ body {
   padding: 0 3vw;
   border-bottom: 1px solid #dadada;
 }
+#logo{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 #logo a {
   text-decoration: none;
   font-size: 2vw;
   color: #fff;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
+}
+#logo i{
+  color: #fff;
+  font-size: 2.4vw;
+  display: block;
 }
 #nav-content {
   width: 20%;
@@ -43,8 +55,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 1vw;
-  font-family:"Inter", sans-serif ;
-
+  font-family: "Inter", sans-serif;
 }
 #sign-in {
   width: 14%;
@@ -58,10 +69,10 @@ body {
   border-radius: 100px;
   padding: 1vh 1.5vw;
 }
-#nav i {
+/* #nav i {
   font-size: 2vw;
   display: none;
-}
+} */
 #nav-content a :hover {
   font-size: 1.01vw;
   color: #d85811;
@@ -81,17 +92,17 @@ body {
   padding: 0 2vw;
 }
 #hero-content-left {
-  width: 30%;
+  width: 35%;
 }
 #hero-content-left h2 {
-  font-size: 3.33vw;
+  font-size: 4vw;
   color: #fff;
-  font-weight:400;
-  font-family:"Inter", sans-serif ;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
 }
 #hero-content-left span {
   color: #d85811;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
 }
 #hero-content-right {
   width: 25%;
@@ -102,29 +113,32 @@ body {
   font-size: 1.3rem;
   line-height: 2rem;
   gap: 2rem;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
   opacity: 0.6;
 }
 #hero-content-right button {
   margin-top: 1.4vw;
   font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid #fff;
   color: #fff;
   opacity: 0.6;
   border-radius: 100px;
-  padding: 1vh 1.4vw;
+  padding: 1.4vh 1.4vw;
   background-color: transparent;
 }
 #hero-content-right button i {
-  margin-left: 1rem;
-  font-size: 1.6rem;
+  margin-left: 1vh;
+  font-size: 2rem;
   background-color: #d85811;
   border-radius: 100px;
 }
 #hero-content-img {
   width: 100%;
   height: 50%;
-  background-image: url("/crypto/BG-img.png");
+  background-image: url("../image/BG-img.png");
   background-size: cover;
   padding: 0 5vw;
 }
@@ -146,7 +160,7 @@ body {
 #second-section-left-img {
   height: 58%;
   width: 80%;
-  background-image: url("/crypto/Group\ 2337.png");
+  background-image: url("../image/Group\ 2337.png");
   background-size: cover;
 }
 
@@ -231,7 +245,7 @@ body {
   border-radius: 10px;
   background-color: rgb(27, 26, 26);
 }
-.third-section-bottom-icon i{
+.third-section-bottom-icon i {
   font-size: 5vw;
   color: #fff;
 }
@@ -312,11 +326,14 @@ body {
   font-weight: 400;
 }
 .leftBoxupper h2 {
-  font-family: "Hammersmith One", sans-serif;
-  font-size: 40px;
+  /* font-family: "Hammersmith One", sans-serif; */
+  font-size: 3vw;
   color: #ffffff;
   padding-top: 16px;
   font-weight: 400;
+}
+.leftBoxupper h2 span{
+width: 45%;
 }
 .leftBoxlower p {
   font-family: "Inter", sans-serif;
@@ -358,6 +375,7 @@ body {
   margin-top: 2.5vw;
   width: 40%;
   display: flex;
+  margin-left: 2vw;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -385,26 +403,26 @@ body {
 #team {
   height: 100vh;
   width: 100%;
-  background-color:#181818;
+  background-color: #181818;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#team-content{
-height: 30%;
-width: 100%;
-padding: 0 4vw;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+#team-content {
+  height: 30%;
+  width: 100%;
+  padding: 0 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#team-content h1{
+#team-content h1 {
   font-size: 2.3vw;
   color: #fff;
 }
-#team-content h2{
+#team-content h2 {
   width: 27%;
   margin-top: 1vh;
   font-weight: 300;
@@ -413,12 +431,12 @@ align-items: center;
   opacity: 0.7;
   text-align: center;
 }
-#team-member-details{
-height: 70%;
-width: 100%;
-display: flex;
-justify-content: space-around;
-align-items: center;
+#team-member-details {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .team-member {
   height: 40vh;
@@ -433,13 +451,13 @@ align-items: center;
   width: 80%;
   border-radius: 50%;
   border: 1px solid #181818;
-  background-image: url("./mine.jpg");
+  background-image: url("../image/mine.jpg");
   background-size: cover;
 }
 .team-member-name h3 {
   color: #fff;
 }
-.team-member-name p{
+.team-member-name p {
   color: #fff;
 }
 #plan {
@@ -510,55 +528,55 @@ align-items: center;
   align-items: center;
   justify-content: space-between;
 }
-.plan-name{
+.plan-name {
   height: 10%;
   width: 100%;
 }
-.plan-name h3{
+.plan-name h3 {
   margin-top: 1vh;
   color: #fff;
   font-size: 1.5vw;
 }
 .plan-content {
-height: 70%;
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-}
-#plan-content-para{
+  height: 70%;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.plan-content-para p{
+#plan-content-para {
+  height: 10%;
+  width: 100%;
+}
+.plan-content-para p {
   color: #fff;
   font-size: 1.1rem;
   margin-left: 1vw;
-  text-align:start;
+  text-align: start;
 }
-.plan-content-para i{
+.plan-content-para i {
   font-size: 1rem;
-  margin-right: 0.5rem;
+
+  color: #fff;
 }
-.plan-price{
-height: 17%;
-width: 100%;
-color: #fff;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+.plan-price {
+  height: 17%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-#plan-price p{
+#plan-price p {
   font-size: 1rem;
   color: #fff;
   opacity: 0.6;
 }
-.plan-price span{
+.plan-price span {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.plan-price button{
+.plan-price button {
   padding: 1vh 0.8vw;
   height: 50%;
   width: 100%;
@@ -576,12 +594,12 @@ justify-content: space-between;
   justify-content: space-around;
   align-items: center;
 }
-#footer-cpy h4{
+#footer-cpy h4 {
   font-size: 1.3rem;
   color: #fff;
   font-weight: 400;
 }
-#footer-home{
+#footer-home {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -592,15 +610,14 @@ justify-content: space-between;
   text-decoration: none;
   color: #fff;
   font-weight: 400;
-
 }
-#footer-icon{
+#footer-icon {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 1vw;
 }
-#footer-icon i{
+#footer-icon i {
   font-size: 1.8rem;
   background-color: white;
   border-radius: 3px;
