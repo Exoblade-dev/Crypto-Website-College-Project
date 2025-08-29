@@ -2,6 +2,37 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
 });
+
+//hero page animation
+function firstPageAnim() {
+  var tl = gsap.timeline();
+
+  tl.from("#nav", {
+    y: "-10",
+    opacity: 0,
+    duration: 1.5,
+    ease: Expo.easeInOut,
+  })
+
+    .to(".boundingelem", {
+      y: 0,
+      duration: 2,
+      ease: Expo.easeInOut,
+      delay: -1,
+      stagger: 0.2,
+    })
+    .from("#hero-content-right", {
+      y: -10,
+      opacity: 0,
+      duration: 1.5,
+      delay: -1,
+      ease: Expo.easeInOut,
+    });
+    
+}
+
+
+//for mouse follwer
 var timeout;
 
 function circleChaptaKaro() {
@@ -40,3 +71,27 @@ function circleMouseFollower(xscale, yscale) {
 }
 circleChaptaKaro();
 circleMouseFollower();
+firstPageAnim();
+
+//paragraph on scroll upper se niche
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      // observer.unobserve(entry.target); // optional: only run once
+    }
+  });
+});
+
+document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+
+const nav = document.getElementById("mainNav");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY <= 50) {
+      nav.classList.add("fixed");
+    } else {
+      nav.classList.remove("fixed");
+    }
+  });
