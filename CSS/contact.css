@@ -23,6 +23,66 @@ body {
   background-color: black;
   width: 100%;
 }
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 3vw;
+}
+#logo {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo a {
+  text-decoration: none;
+  font-size: 2vw;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+#logo i {
+  color: #fff;
+  font-size: 2.4vw;
+  display: block;
+}
+#nav-content {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav-content a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1vw;
+  font-family: "Inter", sans-serif;
+}
+#sign-in {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sign-in button {
+  font-size: 1vw;
+  border: 1px solid #d85811;
+  border-radius: 100px;
+  padding: 1vh 1.5vw;
+}
+/* #nav i {
+  font-size: 2vw;
+  display: none;
+} */
+#nav-content a:hover {
+  font-size: 1.01vw;
+  color: #d85811;
+}
 #first-sec {
   height: 70vh;
   width: 100%;
