@@ -34,10 +34,10 @@
             <a href="contact.html">Contact us</a>
           </div>
           <div id="sign-in">
-            <button style="background-color: transparent; color: #fff">
-              sign-in
+            <button class="btn" style="background-color: transparent; color: #fff; --clr:#1e7add;">
+              <span>sign-in</span>
             </button>
-            <button style="background-color: #d85811;color: #fff;">sign-up</button>
+            <button class="btn" style="background-color: #d85811; color:#fff; --clr:#fff;"><span>sign-up</span></button>
           </div>
           <!-- <i class="ri-menu-3-line"></i> -->
         </div>
@@ -55,25 +55,14 @@
         </div>
         <div id="first-sec-input">
           <div id="name">
-            <li>
-              Your Name
-
-              <hr />
-            </li>
-
-            <li>
-              Email Address
-              <hr />
-            </li>
-
-            <li>
-              Phone Number(optional)
-              <hr />
-            </li>
+            <!-- <input type="text" required />
+              <label for="" style="color: #fff;">Username</label> -->
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Email Address">
+            <input type="text" placeholder="Phone Number(optional)">
           </div>
           <div id="msg">
-            <p>Message</p>
-            <hr />
+            <input type="text" placeholder="Message">
           </div>
           <div id="btn"><button>Leave us a message</button></div>
         </div>
@@ -113,9 +102,26 @@
             <button>Subscribe</button>
           </div>
         </div>
-      </div>
+        
+        
        
 
+      </div>
+      <div id="footer">
+        <div id="footer-cpy">
+          <h4>Copyright &copy;2025 Blockifi | All Rights Reversed</h4>
+        </div>
+      <div id="footer-home">
+          <a href="#">Home</a>
+          <a href="#">About </a>
+          <a href="#plan">Pricing</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div id="footer-icon">
+          <i class="ri-twitter-x-fill"></i>
+          <i class="ri-meta-fill"></i>
+          <i class="ri-telegram-2-fill"></i>
+        </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -127,6 +133,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="./JS/script.js"></script>
+    <script src="./JS/contact.js"></script>
   </body>
 </html>

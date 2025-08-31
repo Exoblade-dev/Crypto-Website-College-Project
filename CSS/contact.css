@@ -2,21 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
 }
 html,
 body {
   height: 100%;
   width: 100%;
 }
-#minicircle{
-  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
-  width:15px ;
+#minicircle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 15px;
   height: 15px;
   position: absolute;
   z-index: 99999;
   border-radius: 50%;
-  box-shadow:0 0 25px 10px #d85811 ;
+  box-shadow: 0 0 25px 10px #d85811;
   background-color: white;
 }
 #main {
@@ -70,11 +70,46 @@ body {
   align-items: center;
 }
 #sign-in button {
-  font-size: 1vw;
-  border: 1px solid #d85811;
-  border-radius: 100px;
+  position: relative;
   padding: 1vh 1.5vw;
+  border: 1px solid #d85811;
+  font-size: 1vw;
+  border-radius: 100px;
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: hidden;
 }
+#sign-in button:hover{
+    color:var(--clr) ;
+    text-shadow: 0 0 10px var (--clr),
+    0 0 40px var(--clr);
+}
+#sign-in button span{
+    position: relative;
+    z-index: 1;
+}
+#sign-in button::before{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(var(--clr),transparent,transparent);
+    transition: 0.5s,top 0s,left 0s;
+    opacity: 0;
+}
+#sign-in button:hover::before{
+    opacity: 1;
+}
+#sign-in button::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 47px;
+}
+
 /* #nav i {
   font-size: 2vw;
   display: none;
@@ -111,7 +146,7 @@ body {
 #first-sec-content-icon {
   height: 20vh;
   width: 10%;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,22 +172,26 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-#name li {
+#name input {
   width: 30%;
   font-size: 1.2rem;
-  color: #fff;
+  background-color: black;
+  padding: 2.5vh 0;
+  border: none;
+  border-bottom: 1px solid #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#name li hr {
-  margin-top: 2vh;
-  color: #fff;
+
+#msg input {
   width: 100%;
-}
-#msg p {
   font-size: 1.2rem;
   margin-bottom: 2vh;
+  padding: 3.5vh 0;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid #fff;
 }
 #btn button {
   padding: 2vh 2vw;
@@ -225,41 +264,78 @@ body {
   align-items: center;
   padding: 5vh 5vw;
 }
-#subscribe{
-    width: 55%;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
+#subscribe {
+  width: 55%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
 }
-#subscribe h2{
-font-size: 2.5vw;
-color: #fff;
-margin-bottom: 2vh;
+#subscribe h2 {
+  font-size: 2.5vw;
+  color: #fff;
+  margin-bottom: 2vh;
 }
-#subscribe h4{
-    color: #fff;
-    width: 55%;
-    opacity: 0.6;
-    line-height: 2vh;
+#subscribe h4 {
+  color: #fff;
+  width: 55%;
+  opacity: 0.6;
+  line-height: 2vh;
 }
-#subscribe-btn{
-    width: 45%;
-    display: flex;
-    flex-direction: row;
+#subscribe-btn {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
 }
-#subscribe-btn input{
-    width: 45%;
-    padding: 1vh 1vw;
-    border-bottom-left-radius: 10px;
-     border-top-left-radius: 10px;
-    background-color: rgb(27, 26, 26);
-    border:1px solid rgb(27,26,26);
+#subscribe-btn input {
+  width: 45%;
+  padding: 1vh 1vw;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgb(27, 26, 26);
+  border: 1px solid rgb(27, 26, 26);
 }
-#subscribe-btn button{
-    width: 15%;
-    padding: 1vh 1vw;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #d85811;
-    border: 1px solid #d85811;
+#subscribe-btn button {
+  width: 15%;
+  padding: 1vh 1vw;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #d85811;
+  border: 1px solid #d85811;
+}
+#footer {
+  margin-top: 10vh;
+  width: 100%;
+  height: 18vh;
+  background-color: #d85811;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer-cpy h4 {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 400;
+}
+#footer-home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+}
+#footer-home a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+#footer-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+}
+#footer-icon i {
+  font-size: 1.8rem;
+  background-color: white;
+  border-radius: 3px;
 }
