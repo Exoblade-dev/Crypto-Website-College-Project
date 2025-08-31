@@ -89,6 +89,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 #sign-in button {
   font-size: 1vw;
