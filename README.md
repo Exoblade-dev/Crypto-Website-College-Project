@@ -108,5 +108,4 @@ For legal clarity, see the full text in `LICENSE`.
 
 SPDX identifier: `MIT`
 
-
 ---
