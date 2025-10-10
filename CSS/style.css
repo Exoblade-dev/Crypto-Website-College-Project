@@ -200,7 +200,6 @@ body {
       font-size: 1.5rem;
       color: #fff;
       animation: marquee 16s linear infinite;
-      width: fit-content;
     }
     @keyframes marquee {
       from { transform: translateX(0%); }
