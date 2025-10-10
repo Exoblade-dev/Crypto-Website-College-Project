@@ -1,5 +1,7 @@
 # Crypto Website — College Project
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 > A static, responsive educational website showcasing basic crypto market information and features. Built as a college project using plain HTML, CSS and JavaScript.
 
 ## Table of Contents
@@ -108,11 +110,3 @@ SPDX identifier: `MIT`
 
 
 ---
-
-If you'd like, I can also:
-
-- Add a minimal `LICENSE` file (MIT) and commit it.
-- Generate a short `README` badge or screenshots for the readme.
-- Add a one-line project description to the repository settings (if you want help with that).
-
-Tell me which of those you'd like and I'll proceed.

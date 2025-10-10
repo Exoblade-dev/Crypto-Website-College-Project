@@ -1,0 +1,10 @@
+# Node / editor / OS ignores useful for static web project
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
+.env
+.vscode/
+/.sass-cache
+/.cache
