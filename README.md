@@ -95,7 +95,16 @@ For edits that affect file locations or filenames, update this README so the ins
 
 ## License
 
-This repository is provided as part of a college project. It is licensed under the MIT License — see the `LICENSE` file if you add one. If you want a different license, replace this section.
+This project is released under the MIT License. The full license text is in the `LICENSE` file at the repository root.
+
+Short summary (not a replacement for the full text):
+
+- You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software.
+- The software is provided "as is", without warranty of any kind. The authors are not liable for any claims or damages arising from its use.
+
+For legal clarity, see the full text in `LICENSE`.
+
+SPDX identifier: `MIT`
 
 
 ---
