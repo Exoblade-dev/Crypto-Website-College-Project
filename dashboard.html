@@ -55,16 +55,53 @@
         <div id="dashboardHeading">
           <div class="dashboardHeadingText">Dashboard</div>
           <div class="dashboardHeadingProfile">
-            <img src="./image/2 1.png" alt="" />
-            <p>Mihir Ranjan</p>
+            <img src="./image/logo.png" alt="" />
+            <p>User</p>
           </div>
         </div>
 
         <div id="dashboardMarket">
           <div class="marketLeft">
             <div class="BalanceMain">
-              <div class="Balance"></div>
-              <div class="Currencies"></div>
+              <div class="Balance">
+                <div class="balanceAmount">
+                  <p>Balance - $ 68.789,44</p>
+                </div>
+                <div class="balanceCreditTools">
+                  <div class="balanceCredit1">
+                    <p>Credit - $ 21,548.44</p>
+                    <!-- <p>$ 21,548.44</p> -->
+                  </div>
+                  <div class="balanceCredit2">
+                    <p>Recent Trade - $ 8.769,04</p>
+                    <!-- <p>$ 8.769,04</p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="Currencies">
+                <!-- Crypto Converter ⚡ Widget --><crypto-converter-widget
+                  amount="1"
+                  shadow="false"
+                  symbol="true"
+                  locale="en"
+                  rounded="true"
+                  border="false"
+                  quote="USD"
+                  base="BTC"
+                  theme="auto"
+                  decimal="4"
+                  stat="false"
+                  tax="0"
+                  background-color="#000000"
+                  background=""
+                ></crypto-converter-widget
+                >
+                <script
+                  async
+                  src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@latest/dist/latest.min.js"
+                ></script>
+                <!-- /Crypto Converter ⚡ Widget -->
+              </div>
             </div>
 
             <div class="Market">

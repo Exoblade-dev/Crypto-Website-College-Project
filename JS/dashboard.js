@@ -6,4 +6,3 @@ function setActive(button) {
   button.classList.add("active");
 }
 
-
