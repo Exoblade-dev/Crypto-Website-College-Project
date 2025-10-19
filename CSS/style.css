@@ -105,76 +105,98 @@ body {
   font-size: 1.01vw;
   color: #d85811;
 }
-#hero-content {
-  width: 100%;
-  height: 100vh;
+/* Mihir Ranjan styling */
+.Hero {
+  display: flex;
+  max-width: 1220px;  
+  margin: 0 auto;     
+  padding: 8% 20px;
+  width: 100%;  
+  column-gap: 24px;
   background-color: black;
-  color: #fff;
-}
-#hero-content-text {
-  width: 100%;
-  height: 45%;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 2vw;
+  align-content: center;
 }
-#hero-content-left {
-  width: 35%;
+
+
+.LeftContent {
+    flex-basis: 100%;
+    font-family: Inter;
+    font-size: 2.35rem;
+    font-weight: 600;
+    color: aliceblue;
+    height: 45%;
 }
-#hero-content-left h2 {
-  font-size: 4vw;
-  color: #fff;
+
+.LeftContent span{
+    color:#d85811;
+}
+
+.RightContent {
+    color: aliceblue;
+    align-items: center;
+    flex-basis: 50%;
+    height: 45%;
+    font-family: Inter;
+    
+}
+
+.RightContent h2 {
   font-weight: 400;
-  font-family: "Inter", sans-serif;
+  margin-bottom: 4%;
 }
-#hero-content-left span {
-  color: #d85811;
-  font-family: "Inter", sans-serif;
+
+.RightContent p { 
+    font-family: Inter;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    
 }
-#hero-content-right {
-  width: 25%;
-  height: 50%;
-  gap: 2vw;
+.TrustFactor {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
 }
-#hero-content-right p {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  gap: 2rem;
-  font-family: "Inter", sans-serif;
+.TrustFactor img{ 
+    width:10%;
+    height:10%;
 }
-#hero-content-right button {
-  margin-top: 1.4vw;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #fff;
-  color: #fff;
-  border-radius: 10vw;
-  padding: 1.2vh 0vw;
-  padding-left: 1.5vw;
-  padding-right: 0.2vw;
-  background-color: transparent;
+
+.cTa {
+    align-items: center;
+    display: flex;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    padding: 8px 16px;
+    width:75%;
+    gap: 5%;
 }
-#hero-content-right button a {
-  text-decoration: none;
-  color: #fff;
+
+.cTa a {
+    font-size: 16px;
+    font-weight: 400;
+    color:#fff;
+    text-decoration: none;
+    align-items: center;
 }
-#hero-content-right button a i {
-  padding: 10px;
-  margin-left: 1.2vw;
-  font-size: 2rem;
-  background-color: #d85811;
-  border-radius: 100px;
+
+.cTa img {
+    background-color: #d85811;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right:-10px;
 }
-#hero-content-img {
+
+.HeroImg {
   width: 100%;
+  align-items: center;
+  margin-top: -45% 0;
+  z-index: -10;
   height: 50%;
-  background-image: url("../image/BG-img.png");
-  background-size: cover;
-  padding: 0 5vw;
 }
+/* Mihir Ranjan styling Ends */
 #second-section {
   height: 95vh;
   width: 100%;
