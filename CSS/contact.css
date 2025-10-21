@@ -193,6 +193,7 @@ body {
   background-color: black;
   border: none;
   border-bottom: 1px solid #fff;
+  color:#fff;
 }
 #btn button {
   padding: 2vh 2vw;
