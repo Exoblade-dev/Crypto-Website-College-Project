@@ -337,8 +337,6 @@ body {
 
 }
 
-
-
 .RightContent {
     flex-basis: 33%;
     padding-left: 8%;
@@ -357,53 +355,83 @@ body {
   font-weight: 400;
   line-height: 2;
 }
+/* Styling newsletter by Mihir Ranjan */
 
-
-#footer-contact {
-  height: 25vh;
-  width: 100%;
+.NewsLetter {
   display: flex;
   align-items: center;
-  padding: 5vh 5vw;
-}
-#subscribe {
-  width: 55%;
-  height: 15vh;
-  display: flex;
-  flex-direction: column;
-}
-#subscribe h2 {
-  font-size: 2.5vw;
+  align-content: center;
+  background-color: #000;
   color: #fff;
-  margin-bottom: 2vh;
+  
 }
-#subscribe h4 {
-  color: #fff;
-  width: 55%;
-  opacity: 0.6;
-  line-height: 2vh;
-}
-#subscribe-btn {
-  width: 45%;
+
+.NewsContent {
+  margin: 0 auto;     
+  width: 100%;  
+  column-gap: 24px;
+  max-width: 1220px;  
   display: flex;
-  flex-direction: row;
+  padding: 8% 20px;
 }
-#subscribe-btn input {
-  width: 45%;
-  padding: 1vh 1vw;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  background-color: rgb(27, 26, 26);
-  border: 1px solid rgb(27, 26, 26);
+
+.NewsLeftContent {
+  flex-basis: 100%;
+  font-size: 1.2rem;
 }
-#subscribe-btn button {
-  width: 15%;
-  padding: 1vh 1vw;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+.NewsLeftContent h2 {
+  padding-bottom: 12px; 
+  
+}
+.NewsLeftContent p {
+  font-size: 1rem;
+  font-weight: 400; 
+  color: #ECECEC;
+}
+
+
+.NewsRightContent {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 100%;
+}
+
+.InputBox {
+  display: flex;
+  width: 100%;
+  max-width: 420px;
+}
+
+.InputBox input {
+  color: #ECECEC;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #1d1d1d;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 70%;
+  height: 72%;
+}
+
+.NewsButton {
+  height: 72%;
   background-color: #d85811;
-  border: 1px solid #d85811;
+  color: #fff;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 30%;
+  transition:0.3s;
 }
+
+.NewsButton:hover {
+  background-color: #e07830; 
+}
+
+/* Newsletter Section End */
+
 #footer {
   margin-top: 10vh;
   width: 100%;
