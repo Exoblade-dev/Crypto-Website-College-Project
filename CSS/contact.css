@@ -285,11 +285,22 @@ body {
 }
 
 .LeftContent h2 {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 1.9;
+
 }
+
+.LeftContent hr {
+  width: 20%;
+  height: 3.5px; 
+  background-color: #000;
+  border: none;
+  margin: 12px 0;
+}
+
 .LeftContent h3 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 700;
 }
 
@@ -304,11 +315,6 @@ body {
   font-size: 1rem;
   font-weight: 700;
 }
-.MiddleContent p{
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 2.5;
-}
 
 .MiddleContent hr {
 
@@ -320,7 +326,19 @@ body {
 }
 
 
-  
+.MiddleContent p{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2.5;
+}
+.MiddleContent span{
+  font-size: 1.5rem;
+  font-weight: 800;
+
+}
+
+
+
 .RightContent {
     flex-basis: 33%;
     padding-left: 8%;
@@ -334,9 +352,12 @@ body {
   margin: 12px 0;
 }
 
-.LeftContent h3 {
-  font-size: 48px;
+.RightContent p{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
 }
+
 
 #footer-contact {
   height: 25vh;
