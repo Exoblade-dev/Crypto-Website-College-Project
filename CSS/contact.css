@@ -146,7 +146,6 @@ body {
 #first-sec-content-icon {
   height: 20vh;
   width: 10%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,7 +239,7 @@ body {
   color: black;
 }
 #email-address p {
-  width: 40%;
+  width: 45%;
   line-height: 2.5vh;
 }
 #number {
@@ -259,6 +258,86 @@ body {
   width: 40%;
   line-height: 2.5vh;
 }
+/* Contact Section styling by Mihir Ranjan, please feel free to contact me */
+
+.ContactSection {
+  display: flex;
+  background-image: url(/image/Contact-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  align-content: center;
+}
+
+.ContactDetails {
+  margin: 0 auto;     
+  width: 100%;  
+  column-gap: 24px;
+  max-width: 1220px;  
+  display: flex;
+  padding: 8% 20px;
+}
+
+.LeftContent {
+  flex-basis: 33%;
+  
+}
+
+.LeftContent h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.LeftContent h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.MiddleContent {
+  flex-basis: 33%;
+  line-height: 80%;
+  padding-left: 8%;
+  padding-bottom: 12%;
+  
+}
+.MiddleContent h3{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.MiddleContent p{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2.5;
+}
+
+.MiddleContent hr {
+
+  width: 20%;
+  height: 3.5px; 
+  background-color: #000;
+  border: none;
+  margin: 12px 0;
+}
+
+
+  
+.RightContent {
+    flex-basis: 33%;
+    padding-left: 8%;
+  }
+
+.RightContent hr {
+  width: 20%;
+  height: 3.5px; 
+  background-color: #000;
+  border: none;
+  margin: 12px 0;
+}
+
+.LeftContent h3 {
+  font-size: 48px;
+}
+
 #footer-contact {
   height: 25vh;
   width: 100%;
