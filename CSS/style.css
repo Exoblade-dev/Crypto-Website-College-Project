@@ -202,7 +202,7 @@ body {
 
 .scroll-strip {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
   color: #fff;
   overflow: hidden;
@@ -212,12 +212,14 @@ body {
   height: 40px;
   border-top: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
+  scroll-behavior: smooth;
 }
 
 .scroll-content {
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 10s linear infinite;
 }
 
 .scroll-content span {
@@ -236,6 +238,7 @@ body {
   margin-left:60px;
   filter: brightness(0) invert(1);
   opacity: 1;
+  object-fit: auto;
 }
 
 @keyframes scroll-left {
@@ -259,6 +262,8 @@ body {
   align-items: center;
   align-content: center;
   color:#fff;
+  overflow: hidden;
+
 
 }
 
@@ -272,22 +277,37 @@ body {
   height: fit-content;
 }
 
+
 .SectionTwoRight {
   flex-basis: 100%;
   padding-left: 4%;
+  font-size: 1rem;
+  font-weight: 400;
   
 }
 .SectionTwoRight h2{
   font-size: 3rem;
   
 }
-.SectionTwoRight a {
-background-color: #d85811;
-width: 30%;
-padding: 12px 16px;
-margin: 12% 0;
+
+.SectionTwoRight p{
+color: #757575;
+padding-top: 2%;
+padding-bottom: 2%;
+width: 70%;
+
 }
+.SectionTwoRight div {
+
+  width: 57%;
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+
  /* Styling third section */
+
 #third-section {
   height: 100vh;
   width: 100%;
