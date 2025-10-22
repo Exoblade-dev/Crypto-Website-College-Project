@@ -79,35 +79,34 @@ body {
   cursor: pointer;
   overflow: hidden;
 }
-#sign-in button:hover{
-    color:var(--clr) ;
-    text-shadow: 0 0 10px var (--clr),
-    0 0 40px var(--clr);
+#sign-in button:hover {
+  color: var(--clr);
+  text-shadow: 0 0 10px var (--clr), 0 0 40px var(--clr);
 }
-#sign-in button span{
-    position: relative;
-    z-index: 1;
+#sign-in button span {
+  position: relative;
+  z-index: 1;
 }
-#sign-in button::before{
-    content: '';
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%,-50%);
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(var(--clr),transparent,transparent);
-    transition: 0.5s,top 0s,left 0s;
-    opacity: 0;
+#sign-in button::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(var(--clr), transparent, transparent);
+  transition: 0.5s, top 0s, left 0s;
+  opacity: 0;
 }
-#sign-in button:hover::before{
-    opacity: 1;
+#sign-in button:hover::before {
+  opacity: 1;
 }
-#sign-in button::after{
-    content: '';
-    position: absolute;
-    inset: 3px;
-    border-radius: 47px;
+#sign-in button::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 47px;
 }
 
 /* #nav i {
@@ -192,7 +191,7 @@ body {
   background-color: black;
   border: none;
   border-bottom: 1px solid #fff;
-  color:#fff;
+  color: #fff;
 }
 #btn button {
   padding: 2vh 2vw;
@@ -271,29 +270,27 @@ body {
 }
 
 .ContactDetails {
-  margin: 0 auto;     
-  width: 100%;  
+  margin: 0 auto;
+  width: 100%;
   column-gap: 24px;
-  max-width: 1220px;  
+  max-width: 1220px;
   display: flex;
   padding: 8% 20px;
 }
 
 .LeftContent {
   flex-basis: 33%;
-  
 }
 
 .LeftContent h2 {
   font-size: 1rem;
   font-weight: 600;
   height: 1.9;
-
 }
 
 .LeftContent hr {
   width: 20%;
-  height: 3.5px; 
+  height: 3.5px;
   background-color: #000;
   border: none;
   margin: 12px 0;
@@ -309,48 +306,44 @@ body {
   line-height: 80%;
   padding-left: 8%;
   padding-bottom: 12%;
-  
 }
-.MiddleContent h3{
+.MiddleContent h3 {
   font-size: 1rem;
   font-weight: 700;
 }
 
 .MiddleContent hr {
-
   width: 20%;
-  height: 3.5px; 
+  height: 3.5px;
   background-color: #000;
   border: none;
   margin: 12px 0;
 }
 
-
-.MiddleContent p{
+.MiddleContent p {
   font-size: 1rem;
   font-weight: 500;
   line-height: 2.5;
 }
-.MiddleContent span{
+.MiddleContent span {
   font-size: 1.5rem;
   font-weight: 800;
-
 }
 
 .RightContent {
-    flex-basis: 33%;
-    padding-left: 8%;
-  }
+  flex-basis: 33%;
+  padding-left: 8%;
+}
 
 .RightContent hr {
   width: 20%;
-  height: 3.5px; 
+  height: 3.5px;
   background-color: #000;
   border: none;
   margin: 12px 0;
 }
 
-.RightContent p{
+.RightContent p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 2;
@@ -363,16 +356,16 @@ body {
   align-content: center;
   background-color: #000;
   color: #fff;
-  
 }
 
 .NewsContent {
-  margin: 0 auto;     
-  width: 100%;  
+  margin: 0 auto;
+  width: 100%;
   column-gap: 24px;
-  max-width: 1220px;  
+  max-width: 1220px;
   display: flex;
   padding: 8% 20px;
+  justify-content: center;
 }
 
 .NewsLeftContent {
@@ -380,15 +373,13 @@ body {
   font-size: 1.2rem;
 }
 .NewsLeftContent h2 {
-  padding-bottom: 12px; 
-  
+  padding-bottom: 12px;
 }
 .NewsLeftContent p {
   font-size: 1rem;
-  font-weight: 400; 
-  color: #ECECEC;
+  font-weight: 400;
+  color: #ececec;
 }
-
 
 .NewsRightContent {
   display: flex;
@@ -403,7 +394,7 @@ body {
 }
 
 .InputBox input {
-  color: #ECECEC;
+  color: #ececec;
   font-size: 0.9rem;
   padding: 0.5rem 0.8rem;
   background-color: #1d1d1d;
@@ -423,11 +414,11 @@ body {
   padding: 0.5rem 1rem;
   cursor: pointer;
   width: 30%;
-  transition:0.3s;
+  transition: 0.3s;
 }
 
 .NewsButton:hover {
-  background-color: #e07830; 
+  background-color: #e2823e;
 }
 
 /* Newsletter Section End */

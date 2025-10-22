@@ -197,8 +197,57 @@ body {
   height: 50%;
 }
 /* Mihir Ranjan styling Ends */
-#second-section {
-  height: 95vh;
+
+/* Marquee of hero section */
+
+.scroll-strip {
+  position: relative;
+  width: 100vw;
+  background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.scroll-content {
+  display: inline-flex;
+  align-items: center;
+  animation: scroll-left 30s linear infinite;
+}
+
+.scroll-content span {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.scroll-content img {
+  width: 12px;
+  height: 12px;
+  margin-left:60px;
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* #second-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -228,7 +277,49 @@ body {
       to   { transform: translateX(-100%); }
     }
 
-    .marquee:hover .marquee__inner { animation-play-state: paused; }
+    .marquee:hover .marquee__inner { animation-play-state: paused; } */
+
+
+    /* Section number 2*/
+
+.SectionTwo {
+  display: flex;
+  max-width: 1220px;  
+  margin: 0 auto;     
+  padding: 8% 20px;
+  width: 100%;  
+  column-gap: 24px;
+  align-items: center;
+  align-content: center;
+  color:#fff;
+
+}
+
+.SectionTwoLeft {
+  flex-basis: 100%;
+
+}
+
+.SectionTwoLeft img {
+  width: 100%;
+  height: fit-content;
+}
+
+.SectionTwoRight {
+  flex-basis: 100%;
+  padding-left: 4%;
+  
+}
+.SectionTwoRight h2{
+  font-size: 3rem;
+  
+}
+.SectionTwoRight a {
+background-color: #d85811;
+width: 30%;
+padding: 12px 16px;
+margin: 12% 0;
+}
 
 #second-section-content {
   height: 90vh;
@@ -249,7 +340,9 @@ body {
   width: 80%;
   border-radius: 32px;
   background-image: url("../image/Group\ 2337.png");
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: all 0.4s ease-in-out;
 }
 #second-section-left-img:hover {
